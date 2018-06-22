@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+	<title>ASMR Trigger</title>
+	<link rel="stylesheet" type="text/css" href="style.css"  href="animate.min.css">
+	<bgsound src="#" id=msound loop=1 autostart="true">
+	<script src="jquery.waypoints.min.js"></script>
+
+	<script>
+
+	window.addEventListener('scroll', function() {
+	  var el = document.querySelector('.contain');
+	  
+	  if(window.scrollY >= 50) el.classList.add('sh');
+	  else el.classList.remove('sh');
+	}); 
+
+
+	window.addEventListener('scroll', function() {
+	  var el = document.querySelector('.contain1');
+	  
+	  if(window.scrollY >= 300) el.classList.add('shown');
+	  else el.classList.remove('shown');
+	});
+
+
+
+
+    function play() {
+        var audio = document.getElementById('mu');
+        if (audio.paused) {
+            audio.play();
+            $('#play').removeClass('c')
+            $('#play').addClass('p')
+        }else{
+            audio.pause();
+            audio.currentTime = 0
+            $('#play').addClass('c')
+            $('#play').removeClass('p')
+        }
+    }
+	</script>
+
+<body>
+	<section class="back" id="back1">
+		<div class="container">
+		<nav class="sticky">
+			<div id="logo">
+				<a href="">
+					<img src="./img/b.png" align="middle"></a></div><!--#logo-->
+			<div class="main">
+			<ul id="menu">
+				<il>
+					<a href="">About</a>
+				</il>
+				<il>
+					<a href="https://gwakyj.github.io/History/">History</a>
+				</il>
+				<il>
+					<a href="https://gwakyj.github.io/Trigger/">Trigger</a>
+				</il>
+				<il>
+					<a href="">Youtuber</a>
+				</il>
+			</ul>
+			</div><!--main-->
+		</nav>
+		<img class="contain0" src="./img/chog.png">
+			<div class="contain">
+				<p>'Trigge’는 ASMR을 느끼게 하는 자극으로 여러 다양한 종류들이 있다. <br>개인마다 취향이 있듯이 ASMR도 자극을 느끼게 되는 소리들이 사람마다 <br>다 다르기 때문에 각자 선호하는 ASMR 취향이 있기 마련이다.<br>
+				그렇다면 Trigger에는 어떤 종류가 있는지 한번 알아보자. </p>
+			</div><!--contain-->
+			<div class="contain1">
+				<div background class="tri">
+					<img class="i" src="./img/eat.png"></img>
+				</div><!--tri-->
+				<div class="tri1">
+					<img class="i" src="./img/hand.png"></img>
+				</div><!--tri1-->
+				<div class="tri2">
+					<img class="i" src="./img/doc.png"></img>
+				</div><!--tri2-->
+				<div class="tri3">
+					<img class="i" src="./img/blow.png"></img>
+				</div><!--tri3-->
+				<div class="tri4">
+					<img class="i" src="./img/wis.png"></img>
+				</div><!--tri4-->
+				<div class="tri5">
+					<img class="i" src="./img/head.png"></img>
+				</div><!--tri5-->
+				<div class="m">
+					<audio id="mu" src="./mp3/mu.mp3"></audio>
+					<img class="i1" src="./img/speaker.png" 
+					class="c" id="play" onclick="play()" style="cursor:pointer;"></img>
+				</div>
+				<div class="m1">
+					<audio id="mu" src="./mp3/mu.mp3"></audio>
+					<img class="i1" src="./img/speaker.png" 
+					class="c" id="play" onclick="play()" style="cursor:pointer;"></img>
+				</div>
+				<div class="m2">
+					<audio id="mu" src="./mp3/mu.mp3"></audio>
+					<img class="i1" src="./img/speaker.png" 
+					class="c" id="play" onclick="play()" style="cursor:pointer;"></img>
+				</div>
+				<div class="m3">
+					<audio id="mu" src="./mp3/mu.mp3"></audio>
+					<img class="i1" src="./img/speaker.png" 
+					class="c" id="play" onclick="play()" style="cursor:pointer;"></img>
+				</div>
+				<div class="m4">
+					<audio id="mu" src="./mp3/mu.mp3"></audio>
+					<img class="i1" src="./img/speaker.png" 
+					class="c" id="play" onclick="play()" style="cursor:pointer;"></img>
+				</div>
+				<div class="m5">
+					<audio id="mu" src="./mp3/mu.mp3"></audio>
+					<img class="i1" src="./img/speaker.png" 
+					class="c" id="play" onclick="play()" style="cursor:pointer;"></img>
+				</div>
+			</div><!--conrain1-->
+		</div><!--container-->
+	</section>
+
+<footer>
+	<div class="bottom">
+		<div>
+			<div class="p"> CONTECT 
+				<p id="p">Gwak Young Ju<br>Email - dudwn8010@naver.com</p>
+			</div> <!--p-->
+				
+			<div class="p1"> SITE
+				<p id="p1"><a href="https://daneden.github.io/animate.css/"> W3SHCOOLS</a><br><a href="https://daneden.github.io/animate.css/"> WIKIPIDIA</a><br><a href="https://daneden.github.io/animate.css/">SIR</a><br><a href="https://daneden.github.io/animate.css/">DANEDEN</a></p>
+				<p id="p2"><a href="https://daneden.github.io/animate.css/">YOUTUBE</a><br><a href="https://daneden.github.io/animate.css/">GOOGLE</a><br><a href="https://daneden.github.io/animate.css/">TISTORY</a><br><a href="https://daneden.github.io/animate.css/">NAVER</a></p>
+				<p id="p3"><a href="https://daneden.github.io/animate.css/">GITHUP</a><br><a href="https://daneden.github.io/animate.css/">EVERYGOODSOFT<br><a href="https://daneden.github.io/animate.css/">CODECLUE</a><br><a href="https://daneden.github.io/animate.css/">BESTJQUERY</a></p>
+			</div><!--p1-->
+			<p class="p4" style="text-align: left;">HKNU<br>Disital<br>Publishing</p>
+	</div><!--bottom-->
+</footer>
+
+
+</body>
+</html>
